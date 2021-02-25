@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".FlickrActivity">
+
+    <Button
+        android:id="@+id/buttonGetImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/get_an_image" />
+
+    <ImageView
+        android:id="@+id/imageViewFromFlickr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/image_from_flickr" />
+
+    <Button
+        android:id="@+id/backToMainFromFlickr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/back_to_main_activity" />
+</LinearLayout>

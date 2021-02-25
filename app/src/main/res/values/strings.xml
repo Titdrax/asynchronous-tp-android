@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">TP2</string>
+    <string name="authenticate">Authenticate</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="go_to_authenticate_activity">Go To Authenticate Activity</string>
+    <string name="go_to_flickr_activity">Go To Flickr Activity</string>
+    <string name="back_to_main_activity">Back To Main Activity</string>
+    <string name="get_an_image">Get an image</string>
+    <string name="image_from_flickr">Image from Flickr</string>
+    <string name="go_to_list_activity">Go To List Activity</string>
+    <string name="search">Search</string>
+    <string name="search_tag">Search Tag</string>
+</resources>
