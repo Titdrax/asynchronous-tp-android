@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
         Button flickrActivityBtn = findViewById(R.id.buttonFlickrActivity);
         Button authenticateActivityBtn = findViewById(R.id.buttonAuthenticateActivity);
         Button listActivityBtn = findViewById(R.id.buttonListActivity);
+        Button geoLocalizationBtn = findViewById(R.id.buttonGeoLocalizationActivity);
 
         flickrActivityBtn.setOnClickListener(v -> {
             Intent flickrActivityIntent = new Intent(this, FlickrActivity.class);
@@ -31,6 +32,11 @@ public class MainActivity extends AppCompatActivity {
         listActivityBtn.setOnClickListener(v -> {
             Intent listActivityIntent = new Intent(this, ListActivity.class);
             startActivity(listActivityIntent);
+        });
+
+        geoLocalizationBtn.setOnClickListener(v -> {
+            Intent geoLocalizationIntent = new Intent(this, GeoLocalizationActivity.class);
+            startActivity(geoLocalizationIntent);
         });
     }
 }

@@ -82,16 +82,6 @@ public class FlickrActivity extends AppCompatActivity {
             return jsonObject;
         }
 
-        private String readStream(InputStream is) throws IOException {
-            StringBuilder sb = new StringBuilder();
-            BufferedReader r = new BufferedReader(new InputStreamReader(is), 1000);
-            for (String line = r.readLine(); line != null; line = r.readLine()) {
-                sb.append(line);
-            }
-            is.close();
-            return sb.toString();
-        }
-
         @Override
         protected void onPostExecute(JSONObject jsonObject) {
             Log.i("JSONObject", jsonObject.toString());
@@ -107,6 +97,16 @@ public class FlickrActivity extends AppCompatActivity {
                 e.printStackTrace();
             }
             new AsyncBitmapDownloader().execute(imageUrl);
+        }
+
+        private String readStream(InputStream is) throws IOException {
+            StringBuilder sb = new StringBuilder();
+            BufferedReader r = new BufferedReader(new InputStreamReader(is), 1000);
+            for (String line = r.readLine(); line != null; line = r.readLine()) {
+                sb.append(line);
+            }
+            is.close();
+            return sb.toString();
         }
     }
 

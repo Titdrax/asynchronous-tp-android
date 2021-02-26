@@ -11,4 +11,7 @@
     <string name="go_to_list_activity">Go To List Activity</string>
     <string name="search">Search</string>
     <string name="search_tag">Search Tag</string>
+    <string name="latitude">Latitude</string>
+    <string name="longitude">Longitude</string>
+    <string name="go_to_geolocalization_activity">Go To GeoLocalization Activity</string>
 </resources>

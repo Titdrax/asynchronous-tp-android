@@ -24,4 +24,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/go_to_list_activity" />
+
+    <Button
+        android:id="@+id/buttonGeoLocalizationActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/go_to_geolocalization_activity" />
 </LinearLayout>
